@@ -19,6 +19,16 @@
 			<key>orderHint</key>
 			<integer>10</integer>
 		</dict>
+		<key>Problem11.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>11</integer>
+		</dict>
+		<key>Problem12.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>12</integer>
+		</dict>
 		<key>Problem2.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -73,6 +83,16 @@
 			<true/>
 		</dict>
 		<key>B517B32B18E6DE41007AEEA7</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>B517B33B18E6E028007AEEA7</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>B517B34B18E6E1D3007AEEA7</key>
 		<dict>
 			<key>primary</key>
 			<true/>
