@@ -17,39 +17,9 @@
 #import <Foundation/Foundation.h>
 #import "eulertools.h"
 
-NSString *IntToString( int number ){
-    NSString *retval = [NSString stringWithFormat:@"%d", number];
-    return retval;
-}
 
-bool isPalindrome( int number ){
-  //  NSLog( @"Testing %d", number );
-    NSString *numstr = IntToString( number );
-   // NSLog( @"String version: %@", numstr );
-    bool testval = true;
-    unsigned long strlen = [numstr length];
-    if( strlen >= 2 ){
-        // innocent until proven guilty :)
- //       bool test = true;
-        char start;
-        char end;
-        unsigned long i = 0;
-        while( i < ( strlen / 2 ) ){
-        //for( unsigned long int i = 0; i < strlen / 2; i++ ){
-            // check if it's a palindrome, fail out if not
-            start = [numstr characterAtIndex:i];
-            end = [numstr characterAtIndex:(strlen-i)-1];
-            if( start != end  ){
-                testval = false;
-                i = strlen;
-             //   NSLog( @"Failed %@ %c/%c", numstr, start, end );
-    
-            }
-            i++;
-        }
-    }
-    return testval;
-}
+
+
 
 int main(int argc, const char * argv[])
 {

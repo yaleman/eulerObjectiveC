@@ -9,10 +9,51 @@
 #ifndef EulerObjC_eulertools_h
 #define EulerObjC_eulertools_h
 
-bool isPrime( unsigned long int num ){
+// definitions
+NSString *IntToString( int );
+bool isPalindrome( int  );
+bool isPrime( unsigned long int );
+NSString *boolToString( bool );
 
-    double maxtest = num / 2 + 1.0;
-    //NSLog( @"Prime testing %lu up to %lu", num, maxtest );
+// actual functions
+
+NSString *IntToString( int number ){
+    NSString *retval = [NSString stringWithFormat:@"%d", number];
+    return retval;
+}
+
+bool isPalindrome( int number ) {
+    //  NSLog( @"Testing %d", number );
+    NSString *numstr = IntToString( number );
+    // NSLog( @"String version: %@", numstr );
+    bool testval = true;
+    unsigned long strlen = [numstr length];
+    if( strlen >= 2 ){
+        // innocent until proven guilty :)
+        //       bool test = true;
+        char start;
+        char end;
+        unsigned long i = 0;
+        while( i < ( strlen / 2 ) ){
+            //for( unsigned long int i = 0; i < strlen / 2; i++ ){
+            // check if it's a palindrome, fail out if not
+            start = [numstr characterAtIndex:i];
+            end = [numstr characterAtIndex:(strlen-i)-1];
+            if( start != end  ){
+                testval = false;
+                i = strlen;
+                //   NSLog( @"Failed %@ %c/%c", numstr, start, end );
+                
+            }
+            i++;
+        }
+    }
+    return testval;
+}
+
+bool isPrime( unsigned long int num ){
+    // returns a bool testing if num is a prime
+    double maxtest = sqrt( num ) + 1.0;
     
     bool retval = true;
     // 2 and 3 are primes
@@ -26,11 +67,12 @@ bool isPrime( unsigned long int num ){
     // test other things
     else {
         static unsigned long int i;
+        // check for primality loop
         for( i = 5; i <= maxtest; i += 2 ){
+            // if it's divisible by a number, it's not prime.
             if( num % i == 0.0 )
             {
                 retval = false;
-                //NSLog( @"Found %lu to be not prime!", num );
                 continue;
             }
         }
