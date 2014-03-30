@@ -22,6 +22,9 @@
 		B517B34D18E6E1D3007AEEA7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5F0062A18E57EFF00A05D10 /* Foundation.framework */; };
 		B517B35018E6E1D3007AEEA7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B517B34F18E6E1D3007AEEA7 /* main.m */; };
 		B517B35418E6E1D3007AEEA7 /* Problem12.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = B517B35318E6E1D3007AEEA7 /* Problem12.1 */; };
+		B517B35D18E6EC6D007AEEA7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5F0062A18E57EFF00A05D10 /* Foundation.framework */; };
+		B517B36018E6EC6D007AEEA7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B517B35F18E6EC6D007AEEA7 /* main.m */; };
+		B517B36418E6EC6E007AEEA7 /* Problem13.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = B517B36318E6EC6E007AEEA7 /* Problem13.1 */; };
 		B545248918E5BD5F00967F9D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5F0062A18E57EFF00A05D10 /* Foundation.framework */; };
 		B545248C18E5BD5F00967F9D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B545248B18E5BD5F00967F9D /* main.m */; };
 		B545249018E5BD5F00967F9D /* Problem4.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = B545248F18E5BD5F00967F9D /* Problem4.1 */; };
@@ -96,6 +99,16 @@
 			dstSubfolderSpec = 0;
 			files = (
 				B517B35418E6E1D3007AEEA7 /* Problem12.1 in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		B517B35A18E6EC6D007AEEA7 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+				B517B36418E6EC6E007AEEA7 /* Problem13.1 in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
@@ -202,6 +215,10 @@
 		B517B34F18E6E1D3007AEEA7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B517B35218E6E1D3007AEEA7 /* Problem12-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Problem12-Prefix.pch"; sourceTree = "<group>"; };
 		B517B35318E6E1D3007AEEA7 /* Problem12.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = Problem12.1; sourceTree = "<group>"; };
+		B517B35C18E6EC6D007AEEA7 /* Problem13 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Problem13; sourceTree = BUILT_PRODUCTS_DIR; };
+		B517B35F18E6EC6D007AEEA7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B517B36218E6EC6E007AEEA7 /* Problem13-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Problem13-Prefix.pch"; sourceTree = "<group>"; };
+		B517B36318E6EC6E007AEEA7 /* Problem13.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = Problem13.1; sourceTree = "<group>"; };
 		B545248818E5BD5E00967F9D /* Problem4 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Problem4; sourceTree = BUILT_PRODUCTS_DIR; };
 		B545248B18E5BD5F00967F9D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B545248E18E5BD5F00967F9D /* Problem4-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Problem4-Prefix.pch"; sourceTree = "<group>"; };
@@ -276,6 +293,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				B517B34D18E6E1D3007AEEA7 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B517B35918E6EC6D007AEEA7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B517B35D18E6EC6D007AEEA7 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -437,6 +462,24 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		B517B35E18E6EC6D007AEEA7 /* Problem13 */ = {
+			isa = PBXGroup;
+			children = (
+				B517B35F18E6EC6D007AEEA7 /* main.m */,
+				B517B36318E6EC6E007AEEA7 /* Problem13.1 */,
+				B517B36118E6EC6D007AEEA7 /* Supporting Files */,
+			);
+			path = Problem13;
+			sourceTree = "<group>";
+		};
+		B517B36118E6EC6D007AEEA7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B517B36218E6EC6E007AEEA7 /* Problem13-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		B545248A18E5BD5F00967F9D /* Problem4 */ = {
 			isa = PBXGroup;
 			children = (
@@ -525,6 +568,7 @@
 				B517B32E18E6DE41007AEEA7 /* Problem10 */,
 				B517B33E18E6E028007AEEA7 /* Problem11unfinished */,
 				B517B34E18E6E1D3007AEEA7 /* Problem12 */,
+				B517B35E18E6EC6D007AEEA7 /* Problem13 */,
 				B5F0062918E57EFF00A05D10 /* Frameworks */,
 				B5F0062818E57EFF00A05D10 /* Products */,
 			);
@@ -546,6 +590,7 @@
 				B517B32C18E6DE41007AEEA7 /* Problem10 */,
 				B517B33C18E6E028007AEEA7 /* Problem11 */,
 				B517B34C18E6E1D3007AEEA7 /* Problem12 */,
+				B517B35C18E6EC6D007AEEA7 /* Problem13 */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -719,6 +764,23 @@
 			productReference = B517B34C18E6E1D3007AEEA7 /* Problem12 */;
 			productType = "com.apple.product-type.tool";
 		};
+		B517B35B18E6EC6D007AEEA7 /* Problem13 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B517B36518E6EC6E007AEEA7 /* Build configuration list for PBXNativeTarget "Problem13" */;
+			buildPhases = (
+				B517B35818E6EC6D007AEEA7 /* Sources */,
+				B517B35918E6EC6D007AEEA7 /* Frameworks */,
+				B517B35A18E6EC6D007AEEA7 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Problem13;
+			productName = Problem13;
+			productReference = B517B35C18E6EC6D007AEEA7 /* Problem13 */;
+			productType = "com.apple.product-type.tool";
+		};
 		B545248718E5BD5E00967F9D /* Problem4 */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = B545249318E5BD5F00967F9D /* Build configuration list for PBXNativeTarget "Problem4" */;
@@ -889,6 +951,7 @@
 				B517B32B18E6DE41007AEEA7 /* Problem10 */,
 				B517B33B18E6E028007AEEA7 /* Problem11 */,
 				B517B34B18E6E1D3007AEEA7 /* Problem12 */,
+				B517B35B18E6EC6D007AEEA7 /* Problem13 */,
 			);
 		};
 /* End PBXProject section */
@@ -931,6 +994,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				B517B35018E6E1D3007AEEA7 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B517B35818E6EC6D007AEEA7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B517B36018E6EC6D007AEEA7 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1107,6 +1178,28 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Problem12/Problem12-Prefix.pch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		B517B36618E6EC6E007AEEA7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Problem13/Problem13-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B517B36718E6EC6E007AEEA7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Problem13/Problem13-Prefix.pch";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -1393,6 +1486,14 @@
 			buildConfigurations = (
 				B517B35618E6E1D3007AEEA7 /* Debug */,
 				B517B35718E6E1D3007AEEA7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		B517B36518E6EC6E007AEEA7 /* Build configuration list for PBXNativeTarget "Problem13" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B517B36618E6EC6E007AEEA7 /* Debug */,
+				B517B36718E6EC6E007AEEA7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};

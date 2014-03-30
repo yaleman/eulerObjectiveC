@@ -10,6 +10,11 @@
  The prime factors of 13195 are 5, 7, 13 and 29.
  
  What is the largest prime factor of the number 600851475143 ?
+
+ 
+ Answer:
+ 6857
+
  */
 
 #import <Foundation/Foundation.h>
@@ -32,13 +37,13 @@ int main(int argc, const char * argv[])
         while( testPrime == false ){
             maxfac-= 2;
             if( bignum % maxfac == 0 ){
-                NSLog( @"found a divisor: %d", maxfac );
+                NSLog( @"found divisors: %d", maxfac );
                 testPrime = isPrime( maxfac );
             }
             
             
         }
-        NSLog( @"Maximum factor of %ld is %d", bignum, maxfac );
+        NSLog( @"Biggest prime factor is %d", maxfac );
     }
     return 0;
 }

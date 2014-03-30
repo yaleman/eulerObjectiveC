@@ -53,32 +53,28 @@ bool isPalindrome( int number ) {
 
 bool isPrime( unsigned long int num ){
     // returns a bool testing if num is a prime
-    double maxtest = sqrt( num ) + 1.0;
-    
-    bool retval = true;
+
     // 2 and 3 are primes
     if( num == 2 || num == 3 ){
-        nil;
+        return true;
     }
     // divisible by 2 or three? nope.
     else if( num % 2 == 0 || num % 3 == 0 ){
-        retval = false;
+        return false;
         }
     // test other things
     else {
         static unsigned long int i;
         // check for primality loop
-        for( i = 5; i <= maxtest; i += 2 ){
+        for( i = 5; i <= sqrt( num ); i += 2 ){
             // if it's divisible by a number, it's not prime.
-            if( num % i == 0.0 )
-            {
-                retval = false;
+            if( num % i == 0 ){
+                return false;
                 continue;
             }
         }
     }
-    
-    return retval;
+    return true;
 }
 
 NSString *boolToString( bool test )
