@@ -19,18 +19,25 @@
 #import <Foundation/Foundation.h>
 #import "eulertools.h"
 
+unsigned long handleNumber( unsigned long num ){
+    static bool test;
+    test = isPrime( num );
+    if( test == true ){
+        return num;
+    }
+    else{
+        return 0;
+    }
+}
+
 int main(int argc, const char * argv[])
 {
 
     @autoreleasepool {
         int maxprime = 2000000;
-        bool test = false;
         unsigned long int sum = 0;
         for( unsigned long int i = 2; i < maxprime; i++ ){
-            test = isPrime( i );
-            if( test == true ){
-                sum += i;
-                }
+            sum += handleNumber( i );
             
             }
         NSLog( @"Sum: %lu", sum );
